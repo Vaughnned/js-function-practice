@@ -81,13 +81,39 @@
     return joinArray;
   }
   reverse("jag testar");
+
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
-
+  function findLongestWord(words) {
+    words = [["long"], ["longer"], ["longest"]];
+  }
+  console.log(words[2][0].length);
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
+  function filterLongWords(longWords) {
+    longWords = ["big", "bigger", "biggest"] {
+      
+    }
+
+  }
   // ---------------------
+
+  // My attempt at our CodeWars Problem
+
+  // let joinNum = [];
+  // function maxNumber(joinNum) {
+  //   let maxArray = [1, 5, 3, 8];
+
+  //   for (i = 0; i < maxArray.length; i++) {
+  //     Math.max(maxArray);
+  //     maxArrayStr = maxArray.toString();
+  //     let splitNum = maxArrayStr.split("");
+  //     joinNum = splitNum.join("");
+  //     return joinNum;
+  //   }
+  // }
+  // console.log(maxNumber(joinNum));
 
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
