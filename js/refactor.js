@@ -31,7 +31,9 @@
   }
 
   // Put your answer below -------------------------
-
+  const doSomethingCool = function () {
+    console.log("Something Cool!");
+  };
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -50,7 +52,12 @@
   setTimeout(sayHi, 2000);
 
   // Put your answer below -------------------------
+  setTimeout(function () {
+    alert("Hello World!");
+  }, 2000);
 
+  // const doSomethingInterval = setInterval(sayHi, 2000);
+  // clearInterval(doSomethingInterval);
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -79,7 +86,7 @@
   console.log("The letter is", letter);
 
   // Put your answer below -------------------------
-
+  ("c");
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -100,7 +107,9 @@
   };
 
   // Put your answer below -------------------------
-
+  var reverseStr = function (str) {
+    return str.split("").reverse().join("");
+  };
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -129,7 +138,18 @@
   };
 
   // Put your answer below -------------------------
+  var spanishColor = function (colorName) {
+    const colors = {
+      rojo: "#ff0000",
+      blanco: "#ffffff",
+      azul: "#0000ff",
+      verde: "#00ff00",
+      negro: "#000000",
+    };
+    return colors[colorName];
+  };
 
+  spanishColor("azul");
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -145,7 +165,8 @@
   var foo = "bar";
 
   // Put your answer below -------------------------
-
+  let foo;
+  foo = "bar";
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -168,7 +189,10 @@
   // callTenTime(functionName);
 
   // Put your answer below -------------------------
-
+  var callNTimes = function (callback, i) {
+    var range = Array.from(Array(i).keys());
+    range.forEach(callback);
+  };
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -195,7 +219,17 @@
   };
 
   // Put your answer below -------------------------
+  (function () {
+    var score = 0;
 
+    var increaseScore = function () {
+      score++;
+    };
+
+    var decreaseScore = function () {
+      score--;
+    };
+  })();
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -214,7 +248,12 @@
   var twoPlusTwo = addNumbers(2, 2);
 
   // Put your answer below -------------------------
+  var addNumbers = function (numberA, numberB) {
+    console.log(numberA + numberB);
+    return numberA + numberB;
+  };
 
+  var twoPlusTwo = addNumbers(2, 2);
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -239,6 +278,15 @@
   };
 
   // Put your answer below -------------------------
+  var speed = 0;
+
+  var accelerate = function (amount = 1) {
+    speed += amount;
+  };
+
+  // Undefined plus a number returns NaN
+  accelerate(50);
+  accelerate();
 
   // -----------------------------------------------
 
